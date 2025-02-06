@@ -1,2 +1,2 @@
 # Core-Java-Q-A
-Author - Megha Patil
+Author - Megha Patil(Practice)
