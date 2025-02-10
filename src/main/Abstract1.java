@@ -30,7 +30,7 @@ class Lion extends animal
     }
 }
 
-public class Abstraction1 {
+public class Abstract1 {
     public static void main(String[] args) {
         animal d = new Dog();
         animal l = new Lion();
