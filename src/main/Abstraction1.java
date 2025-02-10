@@ -1,10 +1,18 @@
 package main;
 abstract class animal
 {
+    animal()
+    {
+        System.out.println("All animal.....");
+    }
     public abstract void sound();
 }
  class Dog extends animal
 {
+    Dog()
+    {
+        super();
+    }
     public void sound()
     {
         System.out.println("Dog is barking");
@@ -12,6 +20,10 @@ abstract class animal
 }
 class Lion extends animal
 {
+    Lion()
+    {
+        super();
+    }
     public void sound()
     {
         System.out.println("Lion is Roar");
