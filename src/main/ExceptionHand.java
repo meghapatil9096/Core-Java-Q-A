@@ -22,24 +22,91 @@ package main;
 
 // Try - Catch -Finally
 
-public class ExceptionHand {
+//  Try - Catch - Finally
+
+//public class ExceptionHand {
+//    public static void main(String[] args) {
+//        try
+//        {
+//            System.out.println("Hello World");
+//            int a=20, b=0, c;
+//            c=a/b;
+//            System.out.println(c);
+//            System.out.println("No Exception");
+//        }
+//        catch(ArithmeticException e)
+//        {
+//            System.out.println("Can't divide by zero");
+//        }
+//        finally
+//        {
+//            System.out.println("Finally");
+//        }
+//        System.out.println("Main Method Ended");
+//    }
+//}
+
+
+
+// Multiple Try catch Block
+
+//public class ExceptionHand
+//{
+//    public static void main(String[] args) {
+//
+//        try
+//        {
+//            int a=20, b=0, c;
+//            c=a/b;
+//            System.out.println(c);
+//        }
+//        catch(ArithmeticException e)
+//        {
+//            System.out.println("Can't divide by zero");
+//        }
+//
+//        try
+//        {
+//            int a[] = {12,23,21,34};
+//            System.out.println(a[5]);
+//        }
+//        catch(ArrayIndexOutOfBoundsException e)
+//        {
+//            System.out.println(e);
+//        }
+//    }
+//}
+
+
+
+
+// Multile catch block
+public  class ExceptionHand {
     public static void main(String[] args) {
+
         try
         {
-            System.out.println("Hello World");
-            int a=20, b=0, c;
+            int a=10,b=2,c;
             c=a/b;
             System.out.println(c);
-            System.out.println("No Exception");
+
+            int arr[]={12,22,23,32};
+            System.out.println(arr[4]);
+
+            String str="aniket";
+            System.out.println(str.toUpperCase());
         }
-        catch(ArithmeticException e)
+        catch (ArrayIndexOutOfBoundsException e)
         {
-            System.out.println("Can't divide by zero");
+            System.out.println("Array Exception");
         }
-        finally
+        catch (ArithmeticException e)
         {
-            System.out.println("Finally");
+            System.out.println("Arithmetic Exception");
         }
-        System.out.println("Main Method Ended");
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
 }
