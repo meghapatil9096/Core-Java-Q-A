@@ -32,7 +32,7 @@ public class ExceptionHand {
             System.out.println(c);
             System.out.println("No Exception");
         }
-        catch(NullPointerException e)
+        catch(ArithmeticException e)
         {
             System.out.println("Can't divide by zero");
         }
