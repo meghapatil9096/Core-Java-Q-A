@@ -81,32 +81,60 @@ package main;
 
 
 // Multile catch block
-public  class ExceptionHand {
+//public  class ExceptionHand {
+//    public static void main(String[] args) {
+//
+//        try
+//        {
+//            int a=10,b=2,c;
+//            c=a/b;
+//            System.out.println(c);
+//
+//            int arr[]={12,22,23,32};
+//            System.out.println(arr[4]);
+//
+//            String str="aniket";
+//            System.out.println(str.toUpperCase());
+//        }
+//        catch (ArrayIndexOutOfBoundsException e)
+//        {
+//            System.out.println("Array Exception");
+//        }
+//        catch (ArithmeticException e)
+//        {
+//            System.out.println("Arithmetic Exception");
+//        }
+//        catch (Exception e)
+//        {
+//            System.out.println(e);
+//        }
+//    }
+//}
+
+
+
+// Nested try - catch block
+
+public class ExceptionHand {
     public static void main(String[] args) {
 
         try
         {
-            int a=10,b=2,c;
-            c=a/b;
-            System.out.println(c);
-
-            int arr[]={12,22,23,32};
-            System.out.println(arr[4]);
-
-            String str="aniket";
-            System.out.println(str.toUpperCase());
+            try
+            {
+                int a[]={12,23,32};
+                System.out.println(a[2]);
+            }
+            catch(ArithmeticException e)
+            {
+                System.out.println(e);
+            }
+            System.out.println(10/0);
         }
-        catch (ArrayIndexOutOfBoundsException e)
-        {
-            System.out.println("Array Exception");
-        }
-        catch (ArithmeticException e)
-        {
-            System.out.println("Arithmetic Exception");
-        }
-        catch (Exception e)
+        catch(ArithmeticException e)
         {
             System.out.println(e);
         }
+        System.out.println("Ending");
     }
 }
