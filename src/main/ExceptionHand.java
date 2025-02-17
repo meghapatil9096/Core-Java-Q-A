@@ -20,9 +20,7 @@ package main;
 
 
 
-// Try - Catch -Finally
-
-//  Try - Catch - Finally
+/*  Try - Catch - Finally */
 
 //public class ExceptionHand {
 //    public static void main(String[] args) {
@@ -48,7 +46,7 @@ package main;
 
 
 
-// Multiple Try catch Block
+/* Multiple Try catch Block */
 
 //public class ExceptionHand
 //{
@@ -80,7 +78,7 @@ package main;
 
 
 
-// Multile catch block
+/*  Multile catch block */
 //public  class ExceptionHand {
 //    public static void main(String[] args) {
 //
@@ -113,7 +111,7 @@ package main;
 
 
 
-// Nested try - catch block
+/* Nested try - catch block  */
 
 //public class ExceptionHand {
 //    public static void main(String[] args) {
@@ -140,27 +138,192 @@ package main;
 //}
 
 
+import java.io.IOException;
+import java.util.Scanner;
 
-// Nested Catch block
+/* Nested Catch block */
+
+//public class ExceptionHand {
+//
+//    public void Display() throws Exception
+//    {
+//            System.out.println("Enter any number : ");
+//            Scanner sc = new Scanner(System.in);
+//            int x = sc.nextInt();
+//            if(x==0)
+//            {
+//                throw new Exception("Not divisible by zero");
+//            }
+//            System.out.println(10/x);
+//
+//    }
+//
+//    public static void main(String[] args) {
+//
+//    ExceptionHand e = new ExceptionHand();
+//    try{
+//        e.Display();
+//    }
+//    catch (Exception e1)
+//    {
+//        System.out.println(e1);
+//    }
+//        System.out.println("Ended");
+//    }
+
+
+
+
+/* Throw keyword   - they are showing error of which Exception in thread "main"  in this way they are sow error */
 //public class ExceptionHand {
 //    public static void main(String[] args) {
-//        try {
-//            System.out.println(10/0);
-//        }
-//        catch (Exception e) {
+////        System.out.println(10/0);
 //
-//            try {
-//               String a="Aniket";
-//               System.out.println(a.toLowerCase());
-//            }
-//            catch (NullPointerException e1) {
-//                System.out.println("NullPointerException");
-//            }
+//        throw new ArithmeticException("Arithmetic Error / by zero");
+//    }
+//}
+
+
+
+/* Throws keyword */
+//public class ExceptionHand {
+//    public static void main(String[] args) throws InterruptedException {
+//        for (int i=0; i<10; i++) {
+//            System.out.println(i);
+//            Thread.sleep(1000);
 //        }
-//        System.out.println("Ended");
+//    }
+//}
+
+
+
+/* Throw VS Throws */
+
+//public class ExceptionHand {
+//    void div(int a, int b) {
+//        if(b == 0) {
+//            throw new ArithmeticException();
+//        }
+//        else {
+//            int c=a/b;
+//            System.out.println(c);
+//        }
+//    }
+//    public static void main(String[] args) {
+//        ExceptionHand e = new ExceptionHand();
+//        e.div(5, 0);
+//    }
+//}
+
+/* we can handle this exception with try catch block  */
+//public class ExceptionHand {
+//    void div(int a, int b)  throws ArithmeticException{
+//        if(b == 0) {
+//            throw new ArithmeticException("Division by zero");
+//        }
+//        else
+//        {
+//            int c = a / b;
+//            System.out.println(c);
+//        }
+//    }
+//    public static void main(String[] args) throws ArithmeticException {
+//        ExceptionHand e = new ExceptionHand();
+////      try{
+////          e.div(5, 0);
+////      }
+////     catch(ArithmeticException ae) {
+////         System.out.println("The value of b is zero");
+////      }
+//        e.div(5, 0);
 //    }
 //}
 
 
 
 
+/* try catch VS Throws */
+//public class ExceptionHand {
+//    public  static void Wait() throws InterruptedException
+//    {
+//        for(int i=0;i<10;i++)
+//        {
+//            System.out.println(i);
+//            Thread.sleep(1000);
+//        }
+//    }
+////    public static void main(String[] args) throws InterruptedException
+////    {
+////        Wait();
+////    }
+//
+//    public static void main(String[] args)
+//    {
+//        try
+//        {
+//            Wait();
+//            System.out.println(10/0);
+//        }
+//        catch (Exception e)
+//        {
+//            System.out.println("Exception Handled");
+//        }
+//        System.out.println("End of main");
+//    }
+//}
+
+
+
+    /* user defined Exception   */
+//class InValidAgeException extends Exception {
+//    InValidAgeException(String msg) {
+//        System.out.println(msg);
+//    }
+//}
+//public class ExceptionHand {
+//    public static void main(String[] args) {
+//        try {
+//            vote(12);
+//        }
+//        catch (Exception e) {
+//            System.out.println(e);
+//        }
+//    }
+//    public static void vote(int age) throws InValidAgeException
+//    {
+//        if(age<18)
+//        {
+//            throw new InValidAgeException("Not eligible for voting");
+//        }
+//        else {
+//            System.out.println("You are eligible for voting");
+//        }
+//    }
+//}
+
+
+
+
+
+/* Exception Propagation */
+
+public class ExceptionHand {
+    public static void main(String[] args) {
+        m1();
+    }
+    public static void m1()
+    {
+        try{
+            m2();
+        }
+        catch (ArithmeticException e)
+        {
+            System.out.println("Exception Handled.....");
+        }
+
+    }
+    public static void m2()
+    {
+        System.out.println(10/0);
+    }
+}
