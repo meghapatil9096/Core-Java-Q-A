@@ -14,5 +14,14 @@ public class StrDemo {
 //        if we want to change then we can have one way
         a=a.concat("Kumar"); // this is create new object a
         System.out.println(a);
+
+
+
+//        Wrapper class
+        int i=1;
+        Integer v = 3;  //Autoboxing    primitive into wrapper class
+        int k =v.intValue();    //Unboxing  - wrapper class into primitve data type
+
+
     }
 }
