@@ -14,7 +14,7 @@ public class GernericDemo {
 
 
 
-        
+
 //        These issues can be solved by Generics
         ArrayList<String> list2 = new ArrayList<>();
         list2.add("Hardik");
