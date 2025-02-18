@@ -18,10 +18,21 @@ public class StrDemo {
 
 
 //        Wrapper class
-        int i=1;
+        int i=1;    //this value save in stack memory
+        Integer j=1; //this value save in heap memory
         Integer v = 3;  //Autoboxing    primitive into wrapper class
         int k =v.intValue();    //Unboxing  - wrapper class into primitve data type
 
+//      Methods
+        System.out.println(Integer.max(3,5));
+        System.out.println(Integer.toBinaryString(11));
+        System.out.println(Integer.min(3,5));
+        String str = "123";
+        Integer m =Integer.valueOf(str);
+        System.out.println(m);
+        Integer x=1;
+        Integer y =2;
+        System.out.println(x.equals(y));
 
     }
 }
