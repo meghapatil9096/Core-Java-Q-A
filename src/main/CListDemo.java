@@ -105,6 +105,8 @@ public class CListDemo {
         Object[] array = list.toArray();
         Integer[] array1 = list.toArray(new Integer[0]);
 
+
+ */
 // sorting an array
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
@@ -120,7 +122,7 @@ public class CListDemo {
         List<String> words = Arrays.asList("banana","Apple","orange");
         words.sort(new StringLengthComparator());
         System.out.println(words);
- */
+
 
     }
 }
