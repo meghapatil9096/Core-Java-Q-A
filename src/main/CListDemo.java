@@ -105,13 +105,12 @@ public class CListDemo {
         Object[] array = list.toArray();
         Integer[] array1 = list.toArray(new Integer[0]);
 
-
- */
 // sorting an array
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(3);
         list.add(2);
+        System.out.println(list);
 
         Collections.sort(list);
         System.out.println(list);
@@ -123,6 +122,16 @@ public class CListDemo {
         words.sort(new StringLengthComparator());
         System.out.println(words);
 
+ */
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(3);
+        list.add(2);
+        list.addLast(5);
+        list.removeFirst();
+        list.removeLast();
+        System.out.println(list);
 
     }
 }
