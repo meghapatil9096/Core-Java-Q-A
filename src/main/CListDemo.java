@@ -1,9 +1,26 @@
 package main;
 
+import java.util.*;
+
+class StringLengthComparator implements Comparator<String>
+{
+
+    @Override
+    public int compare(String o1, String o2) {
+        return o1.length() - o2.length();
+    }
+}
+class MyComparator implements Comparator<Integer>
+{
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o1-o2;
+
+    }
+}
 public class CListDemo {
     public static void main(String[] args) {
 /*       ArrayList   */
-
 
 
 
@@ -77,8 +94,34 @@ public class CListDemo {
 
         List<Integer> list2 = List.of(4, 5, 6);
         list.addAll(list2);
+        list.addFirst(8);
         System.out.println(list);
-  */
+
+        //converting to Array
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        Object[] array = list.toArray();
+        Integer[] array1 = list.toArray(new Integer[0]);
+
+// sorting an array
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(3);
+        list.add(2);
+
+        Collections.sort(list);
+        System.out.println(list);
+
+        list.sort(new MyComparator());  //call MyComparator class
+        System.out.println(list);
+
+        List<String> words = Arrays.asList("banana","Apple","orange");
+        words.sort(new StringLengthComparator());
+        System.out.println(words);
+ */
 
     }
 }
