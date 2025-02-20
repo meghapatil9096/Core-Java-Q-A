@@ -5,6 +5,9 @@ import java.util.LinkedList;
 
 public class LinkedListDemo {
     public static void main(String[] args) {
+
+    /* Linked List  */
+
         LinkedList<Integer> list = new LinkedList<>();
         list.add(1);
         list.add(2);
