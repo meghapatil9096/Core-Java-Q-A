@@ -15,7 +15,7 @@ public class LinkedListDemo {
         list.addFirst(5);
         list.addLast(6);
         System.out.println(list.getFirst());
-        list.getLast();
+        System.out.println(list.getLast());
         System.out.println(list);
 
         list.removeIf(x -> x%2==0);
