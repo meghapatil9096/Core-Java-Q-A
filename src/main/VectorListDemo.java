@@ -1,6 +1,7 @@
 package main;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Vector;
 
 public class VectorListDemo {
@@ -62,5 +63,12 @@ public class VectorListDemo {
         list.trimToSize();
         System.out.println(list);
         System.out.println(list.size());
+
+        LinkedList<Integer> list4 = new LinkedList<>();
+        list4.add(1);
+        list4.add(2);
+        list4.add(3);
+        Vector<Integer> list5 = new Vector<>(list4);
+        System.out.println(list5);
     }
 }
