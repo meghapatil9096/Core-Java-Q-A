@@ -1,4 +1,5 @@
 package main;
+// Synchronized method in java
 class  Table
 {
     public synchronized void printTable(int n)
