@@ -1,45 +1,93 @@
 package main;
 // Synchronized method in java
-class  Table
+//class  Table
+//{
+//    public synchronized void printTable(int n)
+//    {
+//        for (int i = 0; i <= 10; i++)
+//        {
+//            System.out.println(n*i);
+//        }
+//    }
+//}
+//class thread3 extends Thread
+//{
+//    Table t;
+//    thread3(Table t)
+//    {
+//        this.t=t;
+//    }
+//    public void run()
+//    {
+//        t.printTable(5);
+//    }
+//}
+//class thread2 extends Thread
+//{
+//    Table t;
+//    thread2(Table t)
+//    {
+//        this.t=t;
+//    }
+//    public void run()
+//    {
+//        t.printTable(7);
+//    }
+//}
+//public class SynchronizationDemo {
+//    public static void main(String[] args) {
+//        Table t = new Table();
+//        thread3 t1 = new thread3(t);
+//        thread2 t2 = new thread2(t);
+//
+//        t1.start();
+//        t2.start();
+//    }
+//}
+
+class evenOrodd
 {
-    public synchronized void printTable(int n)
+    public synchronized void printNum(int n)
     {
-        for (int i = 0; i <= 10; i++)
+        if(n%2==0)
         {
-            System.out.println(n*i);
+            System.out.println("Even number");
+        }
+        else {
+            System.out.println("Odd number");
         }
     }
 }
-class thread3 extends Thread
+class thread11 extends Thread
 {
-    Table t;
-    thread3(Table t)
+    evenOrodd e;
+    thread11(evenOrodd e)
     {
-        this.t=t;
+        this.e = e;
     }
     public void run()
     {
-        t.printTable(5);
+        e.printNum(6);
     }
 }
-class thread2 extends Thread
+class thread12 extends Thread
 {
-    Table t;
-    thread2(Table t)
+    evenOrodd e;
+    thread12(evenOrodd e)
     {
-        this.t=t;
+        this.e = e;
     }
     public void run()
     {
-        t.printTable(7);
+        e.printNum(7);
     }
 }
-public class SynchronizationDemo {
-    public static void main(String[] args) {
-        Table t = new Table();
-        thread3 t1 = new thread3(t);
-        thread2 t2 = new thread2(t);
 
+class  SynchronizationDemo {
+    public static void main(String[] args) {
+        evenOrodd e = new evenOrodd();
+        thread11 t1 = new thread11(e);
+        thread12 t2 = new thread12(e);
         t1.start();
         t2.start();
     }
