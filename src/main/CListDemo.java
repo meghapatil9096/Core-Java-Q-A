@@ -124,12 +124,13 @@ public class CListDemo {
 
  */
 
-        
+
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(3);
         list.add(2);
         list.addLast(5);
+        list.addFirst(7);
         list.removeFirst();
         list.removeLast();
         System.out.println(list);

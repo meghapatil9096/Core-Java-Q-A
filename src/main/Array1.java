@@ -1,4 +1,7 @@
-public class Test {
+package main;
+import java.util.Scanner;
+
+public class Array1 {
     public static void main(String[] args) {
         System.out.println("Enter the size of Array : ");
         Scanner sc = new Scanner(System.in);

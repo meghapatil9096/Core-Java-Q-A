@@ -39,3 +39,6 @@ public class Abstract1 {
         l.sound();
     }
 }
+
+
+

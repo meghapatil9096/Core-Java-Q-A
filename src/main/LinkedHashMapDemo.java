@@ -29,7 +29,6 @@ public class LinkedHashMapDemo {
         System.out.println(map.sequencedValues());
 
 
-
         System.out.println(map.putFirst("Papaya",45));
         System.out.println(map);
         System.out.println(map.putLast("Mango",65));
@@ -48,8 +47,6 @@ public class LinkedHashMapDemo {
         System.out.println(map.pollFirstEntry());
         System.out.println(map.pollLastEntry());
         System.out.println(map);
-
-
 
     }
 }

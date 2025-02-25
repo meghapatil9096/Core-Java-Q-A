@@ -27,6 +27,7 @@ public class Interface1 implements client{
     public static void main(String[] args)
     {
         client c = new Interface1();
+
         c.input();
         c.output();
     }

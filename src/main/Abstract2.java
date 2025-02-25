@@ -55,7 +55,7 @@ public class Abstract2 {
         double radius =sc.nextDouble();
         Triangle t = new Triangle(radius);
         t.calculateArea();
-        System.out.println("The area of the Triangle i :"+t.calculateArea());
-
+        System.out.println("The area of the Triangle is :"+t.calculateArea());
+        
     }
 }
