@@ -5,13 +5,11 @@ class Student //super class
 {
     int rollno, marks;
     String name;
-
     void inpute()
     {
         System.out.println("Enter roll no, marks and name: ");
     }
 }
-
 public class Simple_Inheritances extends Student  //sub lass
 {
     void display()
@@ -21,12 +19,10 @@ public class Simple_Inheritances extends Student  //sub lass
         System.out.println("Marks: "+marks);
         System.out.println("Name: "+name);
     }
-
     public static void main(String[] args) {
         Simple_Inheritances obj = new Simple_Inheritances();
         obj.display();
     }
-
 }
 */
 
