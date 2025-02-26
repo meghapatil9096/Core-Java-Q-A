@@ -1,3 +1,5 @@
+package Demo;
+
 // By default value is null
 public class ArrayDemo3
 {
