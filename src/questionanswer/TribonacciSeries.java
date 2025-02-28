@@ -2,7 +2,7 @@ package questionanswer;
 
 import java.util.Scanner;
 
-public class TribonacciSeries {;
+public class TribonacciSeries {
     public static void main(String[] args) {
         int n, a=0,b=1,c=2,d;
         System.out.println("Enter series number : ");
