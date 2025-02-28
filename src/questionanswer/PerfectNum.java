@@ -1,5 +1,7 @@
 package questionanswer;
-
+//  Perfect Number
+//  6 -->  1 2 3 4 5  all this number is smaller than 6
+//  6 -->  1 + 2 + 3  = 6     (6 is divisible by 1,2,3 )
 import java.util.Scanner;
 
 public class PerfectNum {
