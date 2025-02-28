@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class FibonacciSeries {
     public static void main(String[] args) {
         int n,a=0,b=1,c;
-        System.out.println("Enter any Number : ");
+        System.out.println("Enter Series Number : ");
         Scanner sc = new Scanner(System.in);
         n=sc.nextInt();
 
