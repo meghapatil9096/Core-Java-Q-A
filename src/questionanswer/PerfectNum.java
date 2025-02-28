@@ -14,7 +14,9 @@ public class PerfectNum {
         for(int i=1; i<n; i++)
         {
             if(n%i==0)
-            sum=sum+i;
+            {
+                sum=sum+i;
+            }
         }
         if(sum==n)
         {
