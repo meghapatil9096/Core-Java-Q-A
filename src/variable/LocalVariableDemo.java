@@ -1,7 +1,7 @@
 package variable;
 
 public class LocalVariableDemo {
-
+//
     void put(int temp)   //parameter temp also local variable
     {
         //local variable
