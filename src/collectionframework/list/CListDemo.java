@@ -21,8 +21,6 @@ public class CListDemo {
     public static void main(String[] args) {
 /*       ArrayList   */
 
-
-
 /*        ArrayList<Integer> list =new ArrayList<>(11);
         list.add(1);
         list.add(2);
