@@ -1,6 +1,6 @@
 package com.neosoft.PolymorphismDemo.Method_Overriding;
 
-public class Test1 {
+public class DynamicDispatch {
     public static void main(String[] args) {
 
 //  Dynamic Dispatch
