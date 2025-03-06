@@ -4,19 +4,15 @@ package com.neosoft.ArrayToArraylist;
 //        Input: arr = [ 2, 3, 4, 5, 8]
 //Output: ArrayList = [ 2, 3, 4, 5, 8]
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 public class ArrayToArrayListDemo {
 
     public static void main(String[] args) {
-//        int[] name = {1,2,3,4,5,8};
-//
-//        List<Integer> al = Arrays.stream(name).boxed().collect(Collectors.toUnmodifiableList());
-//        System.out.println(al);
-
 
         int [] num =  new int[5];
         Scanner sc= new Scanner(System.in);
@@ -26,11 +22,15 @@ public class ArrayToArrayListDemo {
         {
             num[i]=sc.nextInt();
         }
-        System.out.println("Converting Array To ArrayList");
 
-        List<Integer> li = Arrays.stream(num).boxed().collect(Collectors.toUnmodifiableList());
-        System.out.println("ArrayList is "+li);
+        ArrayList<Integer> list = new ArrayList<>(num[4]);
 
+        for (int i : num)
+        {
+            list.add(i);
+        }
+
+        System.out.println(" Converting Array to ArrayList  "+list);
 
     }
 
