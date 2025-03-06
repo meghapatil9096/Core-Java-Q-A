@@ -21,15 +21,13 @@ public class ArrayToArrayListDemo {
             num[i]=sc.nextInt();
         }
 
-        ArrayList<Integer> list = new ArrayList<>(num[4]);
+        ArrayList<Integer> list = new ArrayList<>();
 
         for (int i : num)
         {
             list.add(i);
         }
-
         System.out.println(" Converting Array to ArrayList  "+list);
-
     }
 
 }
