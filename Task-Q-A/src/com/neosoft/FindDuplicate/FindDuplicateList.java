@@ -1,5 +1,5 @@
 package com.neosoft.FindDuplicate;
-
+//Given a list of integers find the duplicates present in the list
 import java.util.ArrayList;
 
 public class FindDuplicateList {
