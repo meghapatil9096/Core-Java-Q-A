@@ -5,8 +5,6 @@ package com.neosoft.ArrayToArraylist;
 //Output: ArrayList = [ 2, 3, 4, 5, 8]
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 
