@@ -3,6 +3,7 @@ package com.neosoft.GenericsMethod;
 import java.lang.reflect.Array;
 
 public class GenericsMethodDemo {
+//    static method with generics
     public static <T> void printArray(T[] array)
     {
         for (T item : array)

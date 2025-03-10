@@ -15,6 +15,7 @@ public class Box<T>
     public static void main(String[] args) {
 
         Box<Integer> intb1 = new Box<>();
+
         intb1.setValue(10);
         System.out.println("Integer value : "+intb1.getValue());
 
