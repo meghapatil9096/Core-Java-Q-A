@@ -4,7 +4,7 @@ interface Square{
     int sqr(int x); //single abstract method
 }
 
-public class Function_InterfaceDemo2 {
+public class Demo2 {
     public static void main(String[] args) {
         int a=5;
 
