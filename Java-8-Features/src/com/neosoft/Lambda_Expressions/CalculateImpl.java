@@ -4,8 +4,7 @@ public class CalculateImpl implements Calculate{
 
     @Override
     public int getSum() {
-        int sum = 5 + 4;
-        return sum;
+        return 5 + 4;
     }
 
     public static void main(String[] args) {

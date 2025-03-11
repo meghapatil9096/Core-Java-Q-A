@@ -3,8 +3,7 @@ package com.neosoft.lambda;
 public class Demo1Impl {
     public static void main(String[] args) {
         Demo1 i=(a, b) -> {
-            int sum = a*b;
-            return sum;
+            return a*b;
         };
 //        we can do in this way also
         int A=i.printData(4,2);
