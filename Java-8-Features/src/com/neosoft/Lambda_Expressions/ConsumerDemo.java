@@ -8,6 +8,5 @@ public class ConsumerDemo {
         Consumer<Integer> display = a -> System.out.println(a);
         display.accept(10);
 
-
     }
 }
