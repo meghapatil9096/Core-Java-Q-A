@@ -1,5 +1,6 @@
 package com.neosoft.lambda;
 
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class SampleImpl {
