@@ -26,7 +26,7 @@ public class CompareTwoArrayList {
         System.out.println("1st Array List :"+list);
         System.out.println("2st Array List :"+list1);
 
-        if(list.equals(list1)==true)
+        if(list.equals(list1))
         {
             System.out.println("Array List are equal");
         }
@@ -41,7 +41,7 @@ public class CompareTwoArrayList {
         System.out.println("1st Array List :"+list);
         System.out.println("2st Array List :"+list1);
 
-        if(list.equals(list1)==true)
+        if(list.equals(list1))
         {
             System.out.println("Array List are equal");
         }

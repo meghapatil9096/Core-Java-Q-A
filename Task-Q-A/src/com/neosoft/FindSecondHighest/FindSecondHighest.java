@@ -1,4 +1,4 @@
-package com.neosoft;
+package com.neosoft.FindSecondHighest;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -16,6 +16,8 @@ public class FindSecondHighest {
     public static void main(String[] args) {
         List<Integer> num = Arrays.asList(3,8,6,9,2,1);
         System.out.println("Second Highest Number is : "+findSecondLargest(num));
+
     }
+
 
 }

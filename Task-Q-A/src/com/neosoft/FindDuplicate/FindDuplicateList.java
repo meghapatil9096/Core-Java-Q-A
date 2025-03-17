@@ -15,7 +15,7 @@ public class FindDuplicateList {
                 empt.add(list.get(i));
             }
         }
-        
+
         System.out.println(empt);*/
 
         Map<Integer, Integer> map = new HashMap<>();
