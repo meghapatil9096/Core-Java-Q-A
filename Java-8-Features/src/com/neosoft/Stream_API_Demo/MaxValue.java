@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 //Find Maximum number from list with stream
-public class Stream_MaxValue {
+public class MaxValue {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(10,22,13,34,5);
 

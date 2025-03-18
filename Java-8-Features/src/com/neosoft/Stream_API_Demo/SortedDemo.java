@@ -2,9 +2,8 @@ package com.neosoft.Stream_API_Demo;
 // Sorted list
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class Stream_SortedDemo {
+public class SortedDemo {
     public static void main(String[] args) {
         List<Integer> marks = Arrays.asList(50,85,74,30,28,10);
 

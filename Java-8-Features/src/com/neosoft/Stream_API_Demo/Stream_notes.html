@@ -1,0 +1,29 @@
+
+Stream creation
+<!-- Collection-->
+        List<Integer> list = Arrays.asList(1,2,3,4,5);
+        list.stream();
+<!--    Array-->
+    String str[] = {"A","B","C"};
+    Arrays.stream(str);
+
+<!--    Stream-->
+    Stream<Integer> st = Stream.of(1,2,3,4);
+
+
+<!--   Sorted()   -->
+        sorted()  ==> According to default natural sorting order
+
+        (i1,i2) -> i1<i2 ? 1: i1>i2? -1: 0
+            Comparator --> compare(obj1, obj2)
+            return -ve iff obj1 has to come before obj2
+            return +ve iff obj1 has to come after obj2
+            return 0 iff obj1 and obj2 are equal
+
+
+    (s1,s2) -> s1.compareTo(s2)  ==> Natural sorting order
+    (s1,s2) -> s2.compareTo(s1)  ==> Reverse of Natural sorting order
+    (s1,s2) -> -s1.compareTo(s2)  ==> Reverse of Natural sorting order
+
+
+

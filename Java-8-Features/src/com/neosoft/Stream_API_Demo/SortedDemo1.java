@@ -3,7 +3,7 @@ package com.neosoft.Stream_API_Demo;
 import java.util.Arrays;
 import java.util.List;
 
-public class Stream_SortedDemo1 {
+public class SortedDemo1 {
     public static void main(String[] args) {
         List<Integer> marks = Arrays.asList(50,85,74,30,28,10);
         List<Integer> sortedList = marks.stream().sorted().toList();
