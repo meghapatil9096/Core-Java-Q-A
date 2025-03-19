@@ -15,7 +15,7 @@ public class InsertDemo1 {
         String gender = "F";
         int age = 21;
         String city = "Nagar";
-
+//This is bad for coding, not good practices
         PreparedStatement ps = con.prepareStatement("insert into Employee (id,name,salary,gender,age,city) values ("+id+",'"+name+"',"+salary+",'"+gender+"',"+age+",'"+city+"')");
         int i = ps.executeUpdate();
 
